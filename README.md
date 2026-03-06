@@ -1,73 +1,127 @@
-# 📄 TOR Specification
+# TOR Specification
 
-Defining a canonical structure for **machine-readable** and **AI-friendly** Terms of Reference (TOR).
+**tor-spec** is an early open specification project for structured, machine-readable, and AI-friendly Terms of Reference (TOR).
 
----
+Its role is practical, but also foundational:
 
-## 🎯 Overview
-
-The **TOR Specification (tor-spec)** establishes a core conceptual model designed for consistency across organizations, sectors, and jurisdictions.
-
-By providing a structured framework, this specification ensures that project requirements are:
-
-- ✅ **Clearer** – Minimizing ambiguity for all stakeholders.
-- 🏗️ **Structured** – Enabling consistent data architecture.
-- 🤖 **AI-Friendly** – Optimized for interpretation by Large Language Models.
-- 🛡️ **Validatable** – Foundation for future automated compliance checks.
+- to improve how TOR documents are structured
+- to reduce ambiguity in project specification
+- to support future validation and automation
+- to prepare a bridge toward more traceable intent-centered models
 
 ---
 
-## 🔭 Project Scope
+## Why this repository exists
 
-Currently, version **v0.1** focus on the foundational layer:
+Many TOR documents are readable only as static narrative text. They are often difficult to compare, validate, reuse, or analyze consistently.
 
-- **Canonical Sections** – Defining the essential parts of a TOR.
-- **Data Model** – Mapping conceptual relationships between elements.
-- **Terminology** – establishing a common language for procurement and scoping.
+In practice, this can contribute to problems such as:
 
-_Future iterations will introduce JSON schemas, validation CLI tools, and AI-assisted drafting templates._
+- unclear project scope
+- weak linkage between objectives and deliverables
+- inconsistent evaluation logic
+- compliance-oriented documents that are hard to reason about
+- limited machine support for review and analysis
 
----
-
-## 📚 Specification Documents
-
-| Document                                            | Description                                                     |
-| :-------------------------------------------------- | :-------------------------------------------------------------- |
-| [`01-terminology.md`](docs/01-terminology.md)       | Definitions and key concepts used throughout the specification. |
-| [`02-tor-core-model.md`](docs/02-tor-core-model.md) | The canonical structure and required vs. optional elements.     |
-| [`03-conformance.md`](docs/03-conformance.md)       | Criteria for achieving compliance with this specification.      |
+`tor-spec` exists to define a clearer baseline.
 
 ---
 
-## 💡 Design Principles
+## Current scope
 
-1. **Vendor Neutral** ☁️ – No dependency on specific service providers or technologies.
-2. **Agency Neutral** 🏛️ – Applicable to any government or organizational structure.
-3. **Machine Readable** 💻 – Designed with future automation and integration in mind.
-4. **Human Centric** 👥 – Must remain readable and intuitive for subject matter experts.
+Version **v0.1** focuses on the minimum conceptual layer needed for a structured TOR model.
 
----
+Current work includes:
 
-## 🔗 Ecosystem
+- terminology
+- core sections
+- minimum conformance rules
 
-This repository defines the **Conceptual Model**. To explore the full ecosystem, see related projects:
-
-- [`tor-schema`](#) – Machine-readable JSON/YAML schemas.
-- [`tor-examples`](#) – Real-world implementations and templates.
-- [`tor-tools`](#) – Validation engines and automation scripts.
+This repository intentionally stays small at this stage.
 
 ---
 
-## 🤝 Contributing
+## Position in the ecosystem
 
-We welcome contributions to refine and expand this open standard.
+This repository should be understood as an **application-level specification** within a larger emerging direction.
 
-1. **Discuss**: Open a proposal or join an existing discussion.
-2. **Align**: Ensure changes follow the core design principles.
-3. **Submit**: Create a Pull Request against the `dev` branch.
+Today, it focuses on TOR.
+Over time, its concepts may connect to broader work on:
 
-Refer to our organization's [CONTRIBUTING.md](https://github.com/thaiopengov-lab/.github/blob/main/CONTRIBUTING.md) and [GOVERNANCE.md](https://github.com/thaiopengov-lab/.github/blob/main/GOVERNANCE.md) for more details.
+- intent traceability
+- structured governance documents
+- machine-readable specifications
+- validation and analysis tooling
+
+In other words, `tor-spec` is not the final theory of the ecosystem. It is one of the first practical building blocks.
 
 ---
 
-© 2026 ThaiOpenGovLab. All rights reserved.
+## Specification documents
+
+| Document | Description |
+| --- | --- |
+| [`docs/01-terminology.md`](docs/01-terminology.md) | Definitions and baseline concepts used in this repository |
+| [`docs/02-tor-core-model.md`](docs/02-tor-core-model.md) | Canonical TOR sections and their role in the model |
+| [`docs/03-conformance.md`](docs/03-conformance.md) | Minimum conditions for a TOR document to conform to this specification |
+
+---
+
+## Design principles
+
+1. **Clarity first** — the structure should reduce ambiguity rather than add ceremony.
+2. **Vendor neutrality** — the model must not assume a specific product, provider, or implementation path.
+3. **Agency neutrality** — the structure should remain useful across institutions and jurisdictions.
+4. **Machine readability** — the model should support future automation, validation, and AI-assisted analysis.
+5. **Human usability** — the specification must remain understandable to practitioners, not only machines.
+
+---
+
+## What this repository does not do yet
+
+This repository does **not yet** define:
+
+- JSON schemas
+- formal validation tooling
+- example corpora
+- scoring models
+- intent traceability graphs
+- anti-vendor-lock review patterns
+
+Those may be introduced later in separate repositories or later phases.
+
+---
+
+## Roadmap direction
+
+Near-term evolution may include:
+
+- richer terminology
+- stronger linkage between objectives, scope, deliverables, and acceptance criteria
+- extension sections for constraints, dependencies, and evaluation logic
+- examples and conformance profiles
+- compatibility with future intent-centered modeling work
+
+---
+
+## Contributing
+
+Contributions are welcome.
+
+Please use issues and pull requests to propose:
+
+- terminology improvements
+- structural refinements
+- conformance clarifications
+- implementation-neutral extensions
+
+For organization-level guidance, see:
+
+- [ThaiOpenGovLab CONTRIBUTING.md](https://github.com/thaiopengov-lab/.github/blob/main/CONTRIBUTING.md)
+- [ThaiOpenGovLab GOVERNANCE.md](https://github.com/thaiopengov-lab/.github/blob/main/GOVERNANCE.md)
+
+---
+
+## License
+
+See [`LICENSE`](LICENSE).
